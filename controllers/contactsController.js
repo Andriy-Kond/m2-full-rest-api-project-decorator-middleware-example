@@ -1,7 +1,7 @@
 import Joi from "joi";
 import { contactsHandler } from "../models/contactsHandler.js";
 import { HttpError } from "../utils/HttpError.js";
-import { tryCatchDecorator } from "../utils/tryCatchDecorator";
+import { tryCatchDecorator } from "../utils/tryCatchDecorator.js";
 
 const schema = Joi.object({
   name: Joi.string()
